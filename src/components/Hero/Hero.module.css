@@ -1,0 +1,589 @@
+.hero {
+  position: relative;
+  height: 636px;
+  background-image: url(/src/assets/Hero__backGround.webp);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  border-radius: 16px;
+  background-color: rgba(109, 108, 114);
+  padding: 80px 0 0 100px;
+}
+
+.hero__content {
+  width: 654px;
+  display: flex;
+  flex-direction: column;
+  gap: 74px;
+}
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero__title {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.42px;
+}
+
+.hero__text {
+  width: 560px;
+
+  color: #fff;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+}
+
+.button__container {
+  width: 400px;
+  display: flex;
+  gap: 49px;
+}
+
+.hero__button {
+  display: flex;
+
+  height: 60px;
+  padding: 14px 38px 16px 38px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 72, 206, 0.4) 0%,
+      rgba(212, 223, 248, 0.4) 100%
+    ),
+    #0048ce;
+  color: var(--White, #fff);
+
+  font-family: "Golos Text";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  border: none;
+}
+
+.button__text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.button__text::after {
+  content: "";
+  width: 35px;
+  height: 10px;
+  background: url("/src/assets/Vector__btn.svg") no-repeat center center;
+  color: white;
+}
+
+.social__icons {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.ceo__info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  bottom: 81px;
+  right: 104px;
+}
+
+.ceo__name {
+  color: #fff;
+  text-align: right;
+  font-family: "Merriweather";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.ceo__position {
+  color: #fff;
+  font-family: "Golos Text";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100 !important;
+  line-height: 22px;
+}
+
+.ceo__img {
+  margin-top: -80px;
+  width: 463px;
+  height: 624px;
+}
+
+@media screen and (max-width: 1590px) {
+  .hero {
+    flex-direction: column;
+    height: 1160px;
+    align-items: center;
+    background-size: cover;
+    background-position: center right;
+  }
+
+  .ceo__img {
+    margin-top: -30px;
+  }
+
+  .social__icons {
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+    width: auto;
+  }
+
+  .ceo__info {
+    position: absolute;
+    bottom: 100px;
+    left: 300px;
+  }
+
+  .button__container {
+    margin: 0 auto;
+  }
+
+  .hero__button {
+    width: 400px;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .text__container {
+    gap: 35px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .ceo__info {
+      left: 200px;
+    }
+
+    .social__icons {
+      right: 100px;
+      width: auto;
+    }
+
+    .hero__title {
+      font-size: 32px;
+    }
+
+    .hero__content {
+      width: 500px;
+    }
+
+    .hero__text {
+      width: 400px;
+    }
+
+    .hero {
+      height: 1250px;
+    }
+
+    .button__container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    padding: 60px 40px;
+    height: auto;
+    min-height: 500px;
+    background-size: cover;
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 600px;
+    gap: 40px;
+  }
+
+  .text__container {
+    gap: 20px;
+  }
+
+  .hero__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .hero__text {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .button__container {
+    width: 100%;
+    max-width: 400px;
+    gap: 30px;
+  }
+
+  .social__icons {
+    right: 250px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 883px) {
+  .social__icons {
+    right: 200px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .social__icons {
+    right: 150px;
+    width: auto;
+  }
+  .ceo__info {
+    left: 150px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero__content {
+    align-items: center;
+  }
+
+  .text__container {
+    align-items: center;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .button__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero__button {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    padding: 12px 30px;
+  }
+
+  .social__icons {
+ 
+    width: auto;
+  }
+
+  .ceo__info {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 615px) {
+  .social__icons{
+    right: 100px;}
+  
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    height: 900px;
+    padding: 30px 15px;
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 400px;
+    gap: 30px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .button__container {
+    max-width: 250px;
+  }
+
+  .hero__button {
+    max-width: 250px;
+    height: 45px;
+    padding: 10px 25px;
+    font-size: 13px;
+  }
+
+  .ceo__img {
+    width: 300px;
+    height: auto;
+    margin-top: -20px;
+  }
+
+  .ceo__info {
+    position: absolute;
+    bottom: 34px;
+    left: 24px;
+    max-width: none;
+    text-align: left;
+  }
+
+  .ceo__name {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .ceo__position {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .social__icons {
+    right: 100px;
+    
+    bottom: 40px;
+    width: auto;
+  }
+
+  .social__icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    height: 960px;
+    border-radius: 20px;
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+    background-size: cover;
+    padding: 40px 12px 0 24px;
+    position: relative;
+  }
+
+  
+  .social__icons img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .hero__content {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  .text__container {
+    width: 100%;
+    gap: 15px;
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .hero__title {
+    color: var(--White, #fff);
+    font-family: Merriweather;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+  }
+
+  .hero__text {
+    color: var(--White, #fff);
+    font-family: "Golos Text";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  .button__container {
+    max-width: none;
+    width: auto;
+  }
+
+  .hero__button {
+    white-space: nowrap;
+    width: 370px;
+    height: 60px;
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .ceo__img {
+    width: 280px;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .button__text::after {
+    width: 25px;
+  }
+
+  .ceo__info {
+    position: absolute;
+    bottom: 34px;
+    left: 24px;
+    width: calc(100% - 48px);
+    max-width: none;
+    text-align: left;
+  }
+
+  .ceo__name {
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .ceo__position {
+    text-align: left;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .social__icons {
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
+    gap: 10px;
+    z-index: 1;
+  }
+
+  .social__icons img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .ceo__info {
+    position: absolute;
+    bottom: 34px;
+    left: 24px;
+    width: calc(100% - 48px);
+    max-width: none;
+  }
+
+  /* .social__icons {
+    position: absolute;
+    bottom: 64.86px;
+    right: 24px;
+    width: auto;
+  } */
+}
+
+@media screen and (max-width: 350px) {
+  .hero {
+    height: 720px;
+    padding: 15px 10px;
+  }
+
+  .hero__content {
+    max-width: 280px;
+    gap: 15px;
+  }
+
+  .hero__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .hero__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .button__container {
+    max-width: 160px;
+  }
+
+  .hero__button {
+    height: 38px;
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .ceo__img {
+    width: 240px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .ceo__info {
+    position: absolute;
+    bottom: 34px;
+    left: 24px;
+    width: calc(100% - 48px);
+    max-width: none;
+  }
+
+  .ceo__name {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .ceo__position {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .social__icons img {
+    width: 18px;
+    height: 18px;
+  }
+}
