@@ -27,7 +27,7 @@ export const Hero = () => {
           </button>
           <div className={s.social__icons}>
             <a href="">
-              <img src="/src/assets/LinkedIn.svg" alt="LinkedIn" />
+              <img src="/src/assets/linkedIn.svg" alt="LinkedIn" />
             </a>
             <a href="">
               <img src="/src/assets/Insta.svg" alt="Insta" />
